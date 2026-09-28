@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png?v=final">
+    <title>BloxdWorldCode - Terms & Rules</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Press Start 2P', monospace; image-rendering: pixelated; }
+        body { background: linear-gradient(135deg, #040c06, #0b1f10, #040c06); background-size: 400% 400%; animation: gradientBG 15s ease infinite; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; overflow-x: hidden; position: relative; padding: 40px 20px; }
+        @keyframes gradientBG { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+        
+        .bg-animation { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+        .square { position: absolute; background: transparent; animation: fall linear infinite; bottom: 100%; }
+        .square:nth-child(1) { left: 6%; width: 40px; height: 40px; border: 4px solid #39ff14; box-shadow: 0 0 15px #39ff14; animation-duration: 8s; }
+        .square:nth-child(2) { left: 20%; width: 20px; height: 20px; border: 4px solid #00ffff; box-shadow: 0 0 10px #00ffff; animation-duration: 5s; animation-delay: 2s; }
+        .square:nth-child(3) { left: 80%; width: 50px; height: 50px; border: 5px solid #39ff14; box-shadow: 0 0 18px #39ff14; animation-duration: 10s; animation-delay: 3s; }
+        .square:nth-child(4) { left: 92%; width: 25px; height: 25px; border: 4px solid #00ffff; box-shadow: 0 0 10px #00ffff; animation-duration: 6s; animation-delay: 0.5s; }
+        @keyframes fall { 0% { transform: translateY(-10%) rotate(0deg); opacity: 0; } 10%, 90% { opacity: 0.35; } 100% { transform: translateY(115vh) rotate(360deg); opacity: 0; } }
+
+        .nav-container { position: absolute; top: 30px; left: 30px; z-index: 10; }
+        .dropdown { position: relative; display: inline-block; padding-bottom: 25px; }
+        .dropbtn { background-color: #0b1f10; color: #39ff14; border: 4px solid #39ff14; padding: 14px 20px; font-size: 0.8rem; cursor: pointer; box-shadow: 4px 4px 0px #000; transition: transform 0.1s, box-shadow 0.1s; }
+        .dropdown:hover .dropbtn { background-color: #39ff14; color: #000; box-shadow: 2px 2px 0px #000; transform: translate(2px, 2px); }
+        
+        .dropdown-content { display: none; position: absolute; top: 55px; left: 0; background-color: rgba(4, 12, 6, 0.98); min-width: 320px; border: 6px solid #10b981; box-shadow: 0 0 25px #10b981, 6px 6px 0px #000; outline: 6px solid #4ade80; padding: 10px; z-index: 99999; }
+        .dropdown:hover .dropdown-content { display: block; animation: menuFade 0.2s ease-out; }
+        @keyframes menuFade { 0% { opacity: 0; transform: translateY(-5px); } 100% { opacity: 1; transform: translateY(0); } }
+
+        .dropdown-content a { color: #00ffff; padding: 14px; text-decoration: none; display: block; font-size: 0.75rem; border-bottom: 4px dashed #10b981; text-align: left; }
+        .dropdown-content a:last-child { border-bottom: none; }
+        .dropdown-content a:hover { background-color: #00ffff; color: #000; text-shadow: none; }
+
+        .header-section { text-align: center; margin-bottom: 30px; z-index: 2; max-width: 1050px; margin-top: 60px; }
+        h1 { font-size: 2.2rem; color: #a6ff00; text-shadow: 0 0 20px #39ff14; margin-bottom: 15px; letter-spacing: -1px; line-height: 1.4; }
+        .subtitle { font-size: 0.75rem; color: #00ffff; text-shadow: 0 0 8px #00ffff; line-height: 1.8; }
+
+        .main-container { width: 100%; max-width: 1050px; background: rgba(4, 12, 6, 0.92); border: 8px solid #10b981; box-shadow: 0 0 30px #10b981, inset 0 0 20px rgba(57, 255, 20, 0.2); outline: 8px solid #4ade80; z-index: 2; padding: 40px; margin-bottom: 40px; }
+        .policy-section { border-bottom: 6px dashed #10b981; padding: 25px 0; }
+        .policy-section:last-of-type { border-bottom: none; }
+        
+        h2 { font-size: 1.1rem; color: #ffff00; text-shadow: 0 0 8px rgba(255, 255, 0, 0.4); margin-bottom: 15px; }
+        p { font-size: 0.75rem; color: #39ff14; line-height: 2; margin-bottom: 15px; }
+        ul { list-style: none; padding-left: 10px; }
+        li { font-size: 0.75rem; color: #fff; line-height: 2; margin-bottom: 10px; position: relative; padding-left: 20px; }
+        li::before { content: '■'; position: absolute; left: 0; color: #ff007f; text-shadow: 0 0 5px #ff007f; font-size: 0.7rem; }
+
+        .footer-copyright { color: rgba(21, 255, 0, 0.6); font-family: monospace; font-size: 10px; text-align: center; z-index: 2; letter-spacing: 1px; border-top: 2px dashed rgba(16, 185, 129, 0.3); width: 100%; max-width: 1050px; padding-top: 25px; margin-top: auto; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-animation">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <nav class="nav-container">
+        <div class="dropdown">
+            <button class="dropbtn">MENU ▼</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="main.html">Commands</a>
+                <a href="code.html">World Code List</a>
+                <a href="api.html">Bloxd.io API's</a>
+                <a href="bloxd.html">Play Bloxd.io</a>
+                <a href="comment.html">AI Chat</a>
+                <a href="chat.html">Community Chat</a>
+                <a href="post.html">Community Posts</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header-section">
+        <h1>TERMS & POLICIES</h1>
+        <p class="subtitle">Official legal, privacy frameworks and lobby rules</p>
+    </div>
+
+    <div class="main-container">
+        
+        <div class="policy-section">
+            <h2>1. PRIVACY POLICY</h2>
+            <p>Your security is heavily armored. Here is how your data is processed across our node infrastructure:</p>
+            <ul>
+                <li><strong>Supabase Data Nodes:</strong> Registered user credentials and profile logging matrices are stored securely inside encrypted database tables.</li>
+                <li><strong>Proton Mail & Forms:</strong> Script feedback submissions sent to BloxdWorldCode@proton.me are locked behind master zero-access encryption layers.</li>
+                <li><strong>Tracking:</strong> We do not sell or lease user interaction profiles. Data structures are strictly deployed to power game tool utilities.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. TERMS AND CONDITIONS</h2>
+            <p>By executing network requests on BloxdWorldCode, you acknowledge and accept these operational restrictions:</p>
+            <ul>
+                <li><strong>License Notice:</strong> You may not replicate the web title or reuse branding assets without an official framework license from Shahadah Studios Elite.</li>
+                <li><strong>API Validation:</strong> Code variables scraped from bloxd.io/docs are provided for research and deployment. Misuse to crash public instances is forbidden.</li>
+                <li><strong>Service Terms:</strong> We reserve the full technical authority to cycle active session routing layers or ban hardware addresses disrupting network nodes.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>3. LOBBY & CHAT RULES</h2>
+            <p>To preserve our ranking as a top-tier fan environment, our 3 active moderators enforce these baseline code behaviors:</p>
+            <ul>
+                <li><strong>No Exploit Spams:</strong> Chat nodes, Minnit engines, and Giscus comment boxes must not be flooded with repetitive logic blocks or loop errors.</li>
+                <li><strong>Staff Respect:</strong> Technical instructions or moderation directives issued by verified system mods must be obeyed immediately.</li>
+                <li><strong>Zero Hostility:</strong> Malicious injection scripts, harassment, or unauthorized promotional links will result in a permanent firewall ban.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-copyright">
+        All Copyrights Reserved - DO NOT reuse the title "BloxdWorldCode" Without License from Shahadah Studios Elite
+    </div>
+
+</body>
+</html>
