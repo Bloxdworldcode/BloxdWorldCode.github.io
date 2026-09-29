@@ -3,7 +3,7 @@
   "name": "BloxdWorldCode Official Launcher",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/favicon.png?v=final",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
