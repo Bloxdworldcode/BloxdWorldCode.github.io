@@ -1,5 +1,6 @@
 # BloxdWorldCode
 <img src="/images/fanlololo.png" width=250; height=250;  >
+
 A community-maintained wiki for **Bloxd.io** world codes, commands, callbacks, and building references.
 
 🌐 **Website:** [bloxdworldcode.vercel.app](https://bloxdworldcode.vercel.app)
