@@ -1,6 +1,6 @@
 {
-  "short_name": "BWC Launcher",
-  "name": "BloxdWorldCode Official Launcher",
+  "short_name": "BWC PWA",
+  "name": "BloxdWorldCode PWA",
   "icons": [
     {
       "src": "/favicon.png?v=final",
