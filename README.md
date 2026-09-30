@@ -3,7 +3,7 @@
 
 A community-maintained wiki for **Bloxd.io** world codes, commands, callbacks, and building references.
 
-🌐 **Website:** [bloxdworldcode.vercel.app](https://bloxdworldcode.vercel.app) & [bloxdworldcode.githu.io](https://bloxdworldcode.github.io)
+🌐 **Website:** [bloxdworldcode.vercel.app](https://bloxdworldcode.vercel.app) & [bloxdworldcode.github.io](https://bloxdworldcode.github.io)
 
 ## What you’ll find here
 
